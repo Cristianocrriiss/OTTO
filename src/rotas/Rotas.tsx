@@ -5,6 +5,7 @@ import { Funcao1 } from '../componentes/Funcao1'
 import { Funcao2 } from '../componentes/Funcao2'
 import { Funcao3 } from '../componentes/Funcao3'
 
+
 export function Rotas() {
     return (
         <BrowserRouter>
@@ -19,5 +20,6 @@ export function Rotas() {
             </Routes>     
             
        </BrowserRouter>
+
     )
 }

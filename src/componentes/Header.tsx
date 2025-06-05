@@ -1,5 +1,6 @@
 import estilos from './Header.module.css'
 
+
 type Props = {
   aoAbrirMenu: () => void;
 };
@@ -12,3 +13,4 @@ export function Header({ aoAbrirMenu }: Props) {
     </div>
   );
 }
+

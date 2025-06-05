@@ -38,3 +38,4 @@ export function Menu({ aberta }: Props) {
     </div>
   );
 }
+

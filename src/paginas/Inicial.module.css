@@ -1,0 +1,29 @@
+.gridConteiner {
+    background-color: var(--cinza-claro);
+    display: grid;
+    height: 100vh;
+    gap: 5px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+        'cabecalho cabecalho'
+        'lateral conteudo';
+}
+
+header{
+    grid-area: cabecalho;
+    height: 100px;
+   
+}
+
+aside{
+    grid-area: lateral;
+
+}
+
+article{
+    grid-area: conteudo;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,49 @@
+
+.gridConteiner {
+  margin-top: 5%;
+  position: fixed;
+  top: 0;
+  left: 0; /* ou right: 0 se quiser que deslize da direita */
+  width: 20%;
+  height: 100vh;
+  background-color: var(--azul-escuro);
+  color: white;
+  transform: translateX(-100%); /* começa fora da tela à esquerda */
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Essa classe é adicionada quando o menu está visível */
+.aberta {
+  transform: translateX(0); /* desliza para dentro da tela */
+}
+
+.conteinerBotoes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  color: black;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 25px;
+  background-color: var(--branco-diferente);
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.botao:hover{
+    background-color: rgba(128, 128, 128, 0.674);
+    color: black;
+  }
+

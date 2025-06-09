@@ -2,7 +2,7 @@
     --azul-claro: #038FD8;
     --azul-escuro: #051628;
     --cinza-escuro: #051628;
-    --white-smoke: #F2F2F2;
+    --branco-diferente: #F2F2F2;
     --cinza-claro: #D5D5D5;
 }
 
@@ -14,7 +14,7 @@
 
 .material-symbols-outlined {
   font-variation-settings:
-    'FILL' 0,
+    'FILL' ,
     'wght' 400,
     'GRAD' 0,
     'opsz' 48;

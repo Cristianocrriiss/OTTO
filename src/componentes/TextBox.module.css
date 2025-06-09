@@ -1,0 +1,49 @@
+.conteiner {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.TextBox {
+  width: 100%;
+  max-width: 700px;
+  height: 100px;
+  padding-inline: 30px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: solid 2px #D5D5D5;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+
+  background-color: white;
+}
+
+
+.TextInput {
+  width: 80%;
+  padding-block: 5px;
+  border: none;
+  outline: none;
+  color: #828282;
+  background: none;
+  font-size: 16px;
+}
+.btnEnviar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--azul-claro); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.btnEnviar:hover {
+  filter: brightness(0.95);
+}

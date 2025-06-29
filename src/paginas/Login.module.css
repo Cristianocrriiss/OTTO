@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--branco-diferente);
+}
+
+.ladoEsquerdo {
+    flex: 1;
+    background-color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloEsquerda {
+    font-size: 80px;
+}
+
+.letra {
+    display: inline-block;
+    animation: ondinha 2s ease-in-out infinite;
+    color: var(--azul-claro)
+}
+
+@keyframes ondinha {
+  0%, 10% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-12px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0); /* pausa no fim */
+  }
+}
+
+/* Lado direito com o formulário */
+.formConteiner {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.222);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    padding: 40px;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--azul-escuro);
+    margin-bottom: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+label {
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+}
+
+.campo {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: transparent;
+    color: var(--azul-escuro);
+    border-bottom: 1px solid #00000077;
+}
+
+.botao {
+    padding: 12px;
+    background-color: var(--azul-escuro);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.botao:hover {
+    background-color: #e5e5e5;
+}
+
+.mensagem {
+    color: #f87171;
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+}

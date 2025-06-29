@@ -1,0 +1,47 @@
+.conteiner {
+    background-color: var(--branco);
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    border: 2px solid var(--azul-claro);
+    box-sizing: content-box;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.conteinerMensagem {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.titulo {
+    background-color: var(--cinza-escuro1);
+    color: var(--branco);
+    font-size: 1rem;
+    padding: 8px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.mensagem {
+    color: var(--preto);
+    font-size: 1rem;
+}
+
+.botao {
+    background-color: var(--cinza-escuro1);
+    color: var(--azul-claro);
+    font-size: .9rem;
+    width: 100px;
+    padding: 6px 0px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    align-self: end;
+}

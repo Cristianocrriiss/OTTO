@@ -1,0 +1,39 @@
+.gridConteiner {
+    background-color: var(--cinza-claro);
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+        'cabecalho cabecalho'
+        'lateral conteudo';
+    transition: grid-template-columns 0.3s ease-in-out; /* adicionado para suavizar a mudança de largura do menu */
+}
+
+/* define largura da grid com menu aberto */
+.gridAberto {
+    grid-template-columns: 1fr 5fr;
+}
+
+/* define largura da grid com menu fechado  */
+.gridFechado {
+    grid-template-columns: 0fr 1fr;
+}
+
+header {
+    grid-area: cabecalho;
+    height: 100px;
+}
+
+aside {
+    grid-area: lateral;
+    background-color: var(--branco-diferente);
+    position: relative; /* importante para que o menu seja relativo a ele */
+    overflow: hidden;   /* impede que o menu ultrapasse os limites */
+}
+
+article {
+    grid-area: conteudo;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}

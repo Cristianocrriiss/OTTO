@@ -1,0 +1,54 @@
+
+.gridConteiner {
+  width: 100%;
+  height: 100%;
+  background-color: var(--azul-escuro);
+  color: white;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  position: relative;  /* muito importante para ocupar o espaço do aside */
+}
+
+.aberta {
+  transform: translateX(0); /* desliza para dentro da tela */
+}
+
+.conteinerBotoes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  height: 40px;
+  color: black;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: var(--branco-diferente);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.botao span{
+  margin-right: 5px;
+  color: 'black'
+}
+
+.botao:hover{
+  filter: brightness(0.85);
+}
+
+.ativo { /* Botão selecionado */
+  background-color: var(--azul-claro);
+  color:white;
+}
+

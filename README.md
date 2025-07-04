@@ -1,6 +1,48 @@
-# OTTO
-## Um assistente para professores, uma revolução para a educação
+# OTTO - Um assistente para professores, uma revolução para a educação
 
-O projeto O.T.T.O consiste em uma ferramenta baseada em *inteligência artificial* cuja função será auxiliar os professores na condução das aulas em um conjunto que pode incluir o período pré-aula (preparação, planejamento e afins), aula (interações mais dinâmicas, tarefas pontuais, etc.) e pós-aula (relatórios, feedbacks, análises, entre outros).
+<img src="src/assets/OTTO LOGO.png" alt="Logo do Projeto" width="200px"/>
 
-Nesses arquivos, o OTTO atua como um chatbot com inteligência artificial generativa, capaz de responder perguntas, esclarecer dúvidas e executar *comandos previamente programados* . Essa funcionalidade visa facilitar o dia a dia do professor, oferecendo suporte tanto pedagógico quanto organizacional.
+---
+
+> **Trabalho de Conclusão de Curso** — Técnico em Desenvolvimento de Sistemas integrado ao Ensino Médio — **ETEC de Hortolândia, 2025**  
+> Orientação: Prof. Priscila Batista Martins
+
+---
+
+## Sobre o Projeto
+
+[**Assista um vídeo sobre o projeto**](https://youtu.be/zmzvQPjzUSs?si=NwREw9gygy0esaBw)
+
+O **OTTO** é uma ferramenta baseada em inteligência artificial desenvolvida para apoiar professores em todas as fases do processo educacional, incluindo:  
+
+- **Pré-aula** (preparação, planejamento, organização)  
+- **Durante a aula** (tarefas pontuais, dinâmicas, interações)  
+- **Pós-aula** (relatórios, feedbacks, análises)
+
+O projeto integra um chatbot de inteligência artificial generativa, capaz de responder perguntas, esclarecer dúvidas e executar comandos programados para facilitar o cotidiano pedagógico e organizacional do professor.  
+
+Além disso, o **OTTO** possui um robô físico baseado no **ESP32-S3-Korvo-1**, ideal para reconhecimento de voz, possibilitando interação por comandos falados. O software conta com uma interface desenvolvida em **React com TypeScript** e um **backend em Python**, incorporando bibliotecas especializadas no desenvolvimento de agentes de IA voltados à educação.
+
+---
+
+## Tecnologias utilizadas
+
+- ESP32-S3-Korvo-1 (reconhecimento de voz)
+- React + TypeScript (interface)
+- Python (backend + agentes de IA)
+
+
+## Informações adicionais
+
+- Status: **Em andamento**  
+- Ano: **2025**
+
+
+
+## Autores
+
+- **Cristiano Secco Júnior**
+- **Daniel Ayron de Oliveira**
+- **Paulo Eduardo Ferreira Junior**
+- **Vicente Matheus Collin Pedroso**  
+

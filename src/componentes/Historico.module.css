@@ -1,0 +1,108 @@
+/* --- Contêiner Principal do Histórico --- */
+
+.historicoContainer {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  /* Espaçamento e Borda (igual ao .perfilConteiner) */
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--azul-claro);
+
+  /* Controle de altura para listas longas */
+  max-height: 250px; /* Ajuste conforme necessário */
+  overflow-y: auto;
+  
+  /* Estilização da barra de rolagem (opcional, mas elegante) */
+  scrollbar-width: thin;
+  scrollbar-color: var(--azul-claro) transparent;
+}
+
+/* --- Título "Histórico" --- */
+
+.tituloHistorico {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; /* Um pouco mais de peso */
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase; /* Para diferenciar de links */
+  letter-spacing: 0.5px;
+  
+  /* Alinha com os links de 90% de largura */
+  margin: 0 auto 0.75rem auto;
+  width: 90%;
+}
+
+/* --- Links Individuais do Histórico --- */
+
+.link {
+  /* Layout (para alinhar título e data) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Dimensões (baseado no .botao) */
+  width: 90%;
+  margin: 0 auto 8px auto; /* Centralizado, com espaço inferior */
+  padding: 10px 12px;
+  box-sizing: border-box; /* Garante que o padding não quebre a largura */
+
+  /* Estilo (Invertido do .botao) */
+  background-color: transparent; /* Começa transparente */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px; /* Igual ao .botao */
+  transition: 0.2s ease; /* Igual ao .botao */
+  
+  /* Tipografia */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+/* --- Título e Data dentro do Link --- */
+
+.tituloLink {
+  /* Para truncar textos longos */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1; /* Ocupa o espaço disponível */
+  margin-right: 10px; /* Espaço antes da data */
+}
+
+.dataLink {
+  flex-shrink: 0; /* Impede que a data encolha */
+  font-size: 0.8rem;
+  opacity: 0.7; /* Menos destaque */
+}
+
+/* --- Estados de Hover e Ativo --- */
+
+.link:hover {
+  /* Sutil destaque no hover */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ativo { 
+  /* Exatamente igual ao .ativo do menu principal */
+  background-color: var(--azul-claro);
+  color: white;
+  font-weight: 500; /* Destaque extra */
+}
+
+/* --- Mensagens de Status (Carregando, Vazio) --- */
+
+.carregando,
+.semHistorico {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  color: white;
+  opacity: 0.7; /* Menos destaque */
+  text-align: center;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+}

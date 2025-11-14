@@ -1,0 +1,72 @@
+.sobreWrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Seção com efeito parallax de fundo fixo */
+.heroSection {
+  background-image: url('/src/assets/catavento.jpg'); /* imagem de fundo */
+  background-attachment: fixed; /* efeito parallax */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+/* Fundo escuro semitransparente para destacar o texto sobre a imagem */
+.heroContent {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.titulo {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+}
+
+/* Seção com conteúdo textual abaixo do parallax */
+.textSection {
+  background-color: #fff;
+  color: #222;
+  padding: 4rem 2rem;
+}
+
+/* Limita largura e espaçamento entre blocos */
+.sectionContent {
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+}
+
+/* Títulos das seções */
+.sectionContent h2 {
+  font-size: 2rem;
+  color: #0091ff;
+  margin-bottom: 1rem;
+}
+
+/* Parágrafos e listas */
+.sectionContent p,
+.sectionContent ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.sectionContent ul {
+  padding-left: 1.5rem;
+}
+
+.sectionContent li {
+  margin-bottom: 0.5rem;
+}

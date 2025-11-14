@@ -1,0 +1,296 @@
+/* Container principal com layout de 2 painéis */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%; /* Ocupa 100% do container pai (provavelmente o <main>) */
+  overflow: hidden; /* Impede rolagem dupla */
+  background-color: #f4f7f6;
+}
+
+/* ============================================= */
+/* PAINEL ESQUERDO (FORMULÁRIO)                  */
+/* ============================================= */
+.painelEsquerdo {
+  flex: 1;
+  min-width: 380px;
+  max-width: 450px;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  overflow-y: auto; /* Permite rolar o formulário em telas pequenas */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.02);
+}
+
+.tituloPainel {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--azul-escuro);
+}
+
+.subtituloPainel {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* Espaçamento entre os grupos de campo */
+}
+
+.campoGrupo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.campoLabel {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.campoInput,
+.campoSelect,
+.campoTextarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #fdfdfd;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campoInput:focus,
+.campoSelect:focus,
+.campoTextarea:focus {
+  outline: none;
+  border-color: var(--azul-claro);
+  box-shadow: 0 0 0 2px rgba(66, 165, 245, 0.2); /* Sombra do seu azul claro */
+}
+
+.campoTextarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Para campos na mesma linha */
+.linhaCampos {
+  display: flex;
+  gap: 1rem;
+}
+
+.botaoGerar {
+  background-color: var(--azul-escuro);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.botaoGerar:hover {
+  background-color: #0B3A80; /* Azul um pouco mais escuro */
+  transform: translateY(-2px);
+}
+
+.botaoGerar:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+
+/* ============================================= */
+/* PAINEL DIREITO (RESULTADO)                    */
+/* ============================================= */
+.painelDireito {
+  flex: 2;
+  padding: 2.5rem;
+  overflow-y: auto; /* Permite rolar o resultado */
+}
+
+/* Estado Inicial (Placeholder) e Carregando */
+.estadoInicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: #999;
+}
+
+.iconeEstado {
+  font-size: 5rem;
+  color: #ccc;
+}
+
+.tituloEstado {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.subtituloEstado {
+  font-size: 1rem;
+  color: #888;
+  max-width: 400px;
+  margin-top: 0.5rem;
+}
+
+/* Container do Plano Gerado */
+.planoGeradoContainer {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+.tituloPlano {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--azul-escuro);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.planoToolbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #ccc;
+}
+
+.botaoToolbar {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.botaoToolbar:hover {
+  background-color: #e0e0e0;
+}
+
+.botaoToolbar .material-symbols-outlined {
+  font-size: 1.1rem;
+}
+
+/* Estilo para o botão "Salvar" */
+.botaoSalvar {
+  background-color: #e8f5e9; /* Verde claro */
+  color: #2e7d32; /* Verde escuro */
+}
+.botaoSalvar:hover {
+  background-color: #c8e6c9;
+}
+
+/* Estilo das seções do plano */
+.planoSecao {
+  margin-bottom: 1.5rem;
+}
+
+.planoSecao h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.planoSecao p, .planoSecao pre {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #222;
+  white-space: pre-wrap; /* Faz o <pre> quebrar a linha */
+  font-family: inherit; /* Faz o <pre> usar a fonte normal */
+  margin-bottom: 0.5rem; /* Espaçamento entre os parágrafos de competência */
+}
+
+/* Estilo para os <textarea> de edição no painel direito */
+.campoEdicao {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px dashed var(--azul-claro); /* Borda tracejada para indicar edição */
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #222;
+  font-family: inherit;
+  background-color: #fafdff; /* Fundo levemente azulado */
+  resize: none; /* Desabilita o redimensionamento manual */
+  overflow: hidden; /* O auto-ajuste de altura cuida da rolagem */
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin-bottom: 0.5rem;
+}
+
+.campoEdicao:focus {
+  outline: none;
+  border-style: solid;
+  box-shadow: 0 0 0 2px rgba(66, 165, 245, 0.2);
+}
+
+/* Estilo para a nota sugerida */
+.nota {
+  font-weight: 700;
+  color: var(--azul-escuro);
+}
+
+/* Campo de input para a nota */
+.campoEdicaoInput {
+  padding: 0.2rem 0.4rem;
+  border: 1px dashed var(--azul-claro);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--azul-escuro);
+  background-color: #fafdff;
+  width: 120px;
+}
+
+/* Spinner de Carregamento */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+.spinnerGrande {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--azul-escuro);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

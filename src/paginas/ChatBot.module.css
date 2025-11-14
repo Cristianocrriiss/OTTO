@@ -1,0 +1,14 @@
+.gridConteiner{
+    background-color: var(--branco-diferente);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.TextBox{
+    width: 100%;
+    padding-inline: 10px;
+}
+

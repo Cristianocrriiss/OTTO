@@ -1,6 +1,6 @@
 # OTTO - Um assistente para professores, uma revolução para a educação
 
-<img src="src/assets/OTTO LOGO - Sombra.png" alt="Logo do Projeto" width="200px"/>
+<img src="src/assets/OTTO LOGO - SOMBRA.png" alt="Logo do Projeto" width="200px"/>
 
 ---
 

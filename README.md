@@ -47,6 +47,12 @@ Além disso, o **OTTO** possui um robô físico baseado no **ESP32-S3-Korvo-1**,
 - Python (backend para processamento de respostas)
 - ESP32-S3-Korvo-1 (reconhecimento de voz)
 
+## Conquistas com o OTTO
+- Melhor Projeto oriundo da Região **Sudeste** do Brasil na **FEBIC 2025 – Joinville/SC** 🏅  
+- Medalha de **OURO** na **EXPOTEC 2025 – Leme/SP** 🏅
+- 2º lugar **Melhor Projeto** do Curso Técnico em Desenvolvimento de Sistemas na **PROJETEC 2025 - Hortolândia/SP** 🥈 
+- Participação em diversas feiras e desafios, como o Solve For Tomorrow Brasil e o Desafio Liga Jovem
+
 ## Informações adicionais
 
 - Status: **Em andamento**  

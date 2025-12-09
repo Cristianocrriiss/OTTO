@@ -1,0 +1,54 @@
+.conteiner {
+  display: flex;
+  justify-content: center;
+  padding-block: 20px;
+  background-color: none;
+}
+
+.TextBox {
+  width: 100%;
+  max-width: 700px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center; /* centraliza botão e textarea verticalmente */
+  border: solid 1px #D5D5D5;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+              rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  background-color: white;
+}
+
+.TextInput {
+  width: 100%;
+  font-weight: 400;
+  min-height: 50px;      /* altura inicial maior */
+  max-height: 200px;
+  padding: 25px 12px;    /* padding simétrico */
+  resize: none;
+  background: none;
+  border: none;
+  outline: none;
+  color: #000000;
+  font-size: 16px;
+  line-height: 22px;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.btnEnviar {
+  align-self: center;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--azul-claro); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.btnEnviar:hover {
+  filter: brightness(0.90);
+}

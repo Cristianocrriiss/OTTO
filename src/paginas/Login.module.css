@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--branco-diferente);
+}
+
+.ladoEsquerdo {
+    width: 65%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #639fff, #3b82f6, #ffffff, #0062ff);
+    background-size: 400% 400%;
+    animation: animarGradiente 15s ease-in infinite;
+}
+
+@keyframes animarGradiente {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tituloEsquerda {
+    font-size: 80px;
+    color: var(--azul-escuro);
+}
+
+
+/* Lado direito com o formulário */
+.formConteiner {
+   width: 35%; 
+    min-width: 360px; 
+    background-color: var(--branco-diferente);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    padding: 40px;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--azul-escuro);
+    margin-bottom: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+label {
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+}
+
+.campo {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: transparent;
+    color: var(--azul-escuro);
+    border-bottom: 1px solid #00000077;
+}
+
+.botao {
+    padding: 12px;
+    background-color: var(--azul-claro);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.botao:hover {
+    background-color: var(--azul-escuro);
+}
+
+.mensagem {
+    color: #f87171;
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .ladoEsquerdo {
+    display: none;
+  }
+
+  .formConteiner {
+    width: 90%;
+    height: 100vh;
+  }
+}
